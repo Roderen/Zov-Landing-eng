@@ -1,0 +1,246 @@
+:root {
+  --main-color: #45A5A3;
+}
+
+.container {
+  max-width: 1218px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+hr {
+  background-color: #DDE3EA;
+  height: 1px;
+  border: none;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'PF Beau Sans Pro Regular';
+}
+
+.main {
+  position: relative;
+}
+
+
+
+.intro {
+  padding: 40px 0;
+  background-color: var(--main-color);
+}
+
+.intro-title {
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 200px;
+  line-height: 240px;
+  letter-spacing: -7px;
+  color: #FFFFFF;
+}
+
+
+.section-blog {
+  margin-top: 72px;
+  margin-bottom: 256px;
+}
+
+.blog__news {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  grid-column-gap: 32px;
+  grid-row-gap: 72px;
+}
+
+.blog__news-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.blog__news-img {
+  max-width: 384px;
+  height: 216px;
+}
+
+.blog__news-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.blog__news-list {
+  margin-top: 24px;
+}
+
+.blog__news-title {
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.blog__news-title a {
+  color: #000000;
+}
+
+.blog__news-date {
+  margin-top: 24px;
+
+  font-family: 'PF Beau Sans Pro Light';
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #000000;
+}
+
+.blog__btn {
+  margin-top: 96px;
+  border: 1px solid var(--main-color);
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-color);
+}
+
+.blog__btn span {
+  margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .blog__news {
+    grid-template-columns: repeat(2, minmax(300px, 500px));
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .blog__news-img {
+    max-width: 500px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro-title {
+    font-size: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-title {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-blog {
+    margin-bottom: 80px;
+  }
+
+  .intro-title {
+    line-height: 150px;
+  }
+
+  .blog__news {
+    grid-template-columns: repeat(1, minmax(300px, 520px));
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-row-gap: 50px;
+  }
+
+  .blog__news-img {
+    max-width: 520px;
+    height: 280px;
+  }
+
+  .blog__btn {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .intro-title {
+    font-size: 100px;
+  }
+
+  .blog__news-img {
+    height: 215px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .intro {
+    padding: 22px 0;
+  }
+
+  .intro-title {
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -3px;
+  }
+
+  .section-blog {
+    margin-top: 24px;
+  }
+
+  .blog__news {
+    grid-template-columns: repeat(1, 312px);
+    grid-row-gap: 32px;
+  }
+
+  .blog__news-img {
+    height: 175px;
+  }
+
+  .blog__news-list {
+    margin-top: 16px;
+  }
+
+  .blog__news-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .blog__news-date {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .blog__news {
+    grid-template-columns: repeat(1, 300px);
+  }
+}

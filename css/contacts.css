@@ -1,0 +1,252 @@
+:root {
+  --main-color: #45A5A3;
+}
+
+.container {
+  max-width: 1218px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+hr {
+  background-color: #DDE3EA;
+  height: 1px;
+  border: none;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'PF Beau Sans Pro Regular';
+}
+
+.main {
+  position: relative;
+}
+
+
+
+.intro-bg {
+  width: 100%;
+}
+
+.intro-title {
+  margin-top: -170px;
+
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 200px;
+  letter-spacing: -7px;
+  color: #FFFFFF;
+}
+
+.section-contacts {
+  margin-top: 35px;
+  margin-bottom: 256px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contacts__left {
+  max-width: 592px;
+  width: 100%;
+}
+
+.contacts__left-title {
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+form {
+  margin-top: 28px;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__label {
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.form__input {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 18px 16px;
+  outline: none;
+  border: 1px solid #DDE3EA;
+  background-color: #fff;
+}
+
+.form__input-comment {
+  margin-bottom: 40px;
+}
+
+.form__input[placeholder] {
+  font-family: 'PF Beau Sans Pro Light';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form__input-comment {
+  resize: none;
+  max-height: 112px;
+}
+
+.form__button {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #FFCC32;
+  padding: 16px 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.form__button span {
+  font-family: 'PF Beau Sans Pro Bold';
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  margin-right: 10px;
+}
+
+.form__button svg path {
+  stroke: #000;
+}
+
+.contacts__right {
+  max-width: 488px;
+  width: 100%;
+}
+
+.contacts__right-list {
+  font-family: 'PF Beau Sans Pro Regular';
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.contacts__right-item {
+  margin-bottom: 28px;
+}
+
+.contacts__right-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__right-item a {
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+
+
+@media screen and (max-width: 1440px) {
+  .intro-title {
+    margin-top: -138px;
+    font-size: 160px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__right {
+    margin-top: 72px;
+    max-width: 592px;
+  }
+
+  .section-contacts {
+    margin-bottom: 80px;
+  }
+
+  .intro-title {
+    font-size: 120px;
+    margin-top: -105px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .intro-title {
+    font-size: 80px;
+    margin-top: -70px;
+  }
+
+  .contacts__left-title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .intro-bg {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro-title {
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -3px;
+    margin-top: -63px;
+  }
+
+  .section-contacts {
+    margin-top: 15px;
+  }
+
+  .contacts__right-list {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro-title {
+    font-size: 52px;
+    margin-top: -59px;
+  }
+}
